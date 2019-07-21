@@ -1,0 +1,5 @@
+Word:korea
+Mistake:5
+Correct number:00000
+Wrong word:sfasf,asfasdfsa,
+Wrong Alphabet:sdh
