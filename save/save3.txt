@@ -1,5 +1,0 @@
-Word:apple
-Mistake:5
-Correct number:00000
-Wrong word:sdk,sdfkshk,
-Wrong Alphabet:sdh

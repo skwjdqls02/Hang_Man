@@ -1,5 +1,0 @@
-Word:organize
-Mistake:5
-Correct number:00000000
-Wrong word:sdfsd,sfsafdfas,
-Wrong Alphabet:sdh

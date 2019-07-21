@@ -1,5 +1,0 @@
-Word:samsung
-Mistake:2
-Correct number:1001001
-Wrong word:sdfsd,
-Wrong Alphabet:sdg
