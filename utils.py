@@ -1,5 +1,5 @@
 def load_word_data():
-    word_file=open("./game_word.txt")
+    word_file=open("./Info/game_word.txt")
     word_data=word_file.readlines()
     word_file.close()
     word_list=[]
@@ -22,7 +22,7 @@ def getPosition(word):
     return False
 
 def write_file(word_list):
-    word_data=open("./game_word.txt", "w")
+    word_data=open("./Info/game_word.txt", "w")
     for i in word_list:
         word_data.write(i+"\n")
     word_data.close()

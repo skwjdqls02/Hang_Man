@@ -1,7 +1,7 @@
 from utils import compare_word, load_word_data, getPosition, write_file
 from save import choose_file
 def game_playtime():      #playtime을 출력하는 함수
-    datafile=open("./game_info.txt", "r")
+    datafile=open("./Info/game_info.txt", "r")
     playtime=datafile.readline()
     datafile.close()
     answer="%s" %playtime
@@ -9,17 +9,7 @@ def game_playtime():      #playtime을 출력하는 함수
 
 def game_rule():        #게임에 룰을 설명합니다.
     print("\n"+"무작위의 영단어가 빈칸 처리되어 나옵니다." + "\n" + "(ex cat=_ _ _) 있을 것 같은 알파벳을 입력했을떼 있다면 그 알파벳이 그자리에 나올것입니다. (ex cat=_ _ _  -> a입력 -> _ a _)" + "\n" + "입력한 알파벳이 해당 단어에 없다면 --O<-<이 하나씩 완성될 것입니다. " + "\n" + "완성이 된다면 -20pt에 다음단어로 넘어 갑니다. 완성전에 단어를 맞춘다면 +25pt 입니다." + "\n")
-'''
-def change_point(old_save_point):     #원래 저장 주소를 받아옵니다
-    print("If you want to go back input 0back0 ")    #잘못들어왔을 경우 나가는 코드를 줍니다.
-    print("EX) C:\\User\\users\\Desktop\\save.txt")    #작성 예시
-    new_save_point=input("Input save point: ")
 
-    if save_point=="0back0":
-        return old_save_point     #잘못들어온 경우이므로 주소는 그대로 유지 됩니다.
-    else:
-        return new_save_point     #새로 입력된 주소를 반환합니다.
-'''
 def edit_word():                    #새로운 단어를 추가
     print("ADD:1    REMOVE:2")
     user_choice=int(input("Choice: "))
@@ -31,7 +21,7 @@ def edit_word():                    #새로운 단어를 추가
             print("It already exists")
             return
         else:                                  #존재하지 않는 단어를 입력한 경우 다음 문장을 프린트
-            datafile=open("./game_word.txt", "a")
+            datafile=open("./Info/game_word.txt", "a")
             datafile.write(new_word + '\n')
             datafile.close()
             text="%s is added" %new_word
@@ -86,7 +76,7 @@ def show_list():
     print(" ")
 
 def game_score():
-    datafile=open("./game_info.txt", "r")
+    datafile=open("./Info/game_info.txt", "r")
     datalist=datafile.readlines()
     score=datalist[1]
     datafile.close()

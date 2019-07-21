@@ -47,7 +47,7 @@ def checkExistence(str, x, check):
         return check, True
 
 def get_game_info():
-    datafile=open("./game_info.txt", "r")
+    datafile=open("./Info/game_info.txt", "r")
     split_data=[]
     game_data=datafile.readlines()
     for i in game_data:
@@ -58,7 +58,7 @@ def get_game_info():
     return times, score
 
 def set_game_info(playtime, score):
-    datafile=open("./game_info.txt", "w")
+    datafile=open("./Info/game_info.txt", "w")
     datafile.write("PlayTime:" + str(playtime) + "\n")
     datafile.write("Score:" + str(score) + "\n")
     datafile.close()
