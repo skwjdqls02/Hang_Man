@@ -1,1 +1,1 @@
-# Word_Game
+# Hange_Man
