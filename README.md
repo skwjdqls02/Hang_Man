@@ -1,1 +1,1 @@
-# Hange_Man
+# Hang_Man
